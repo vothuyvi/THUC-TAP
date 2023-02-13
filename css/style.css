@@ -136,8 +136,10 @@ div.container {
       display: flex;
       align-items: center; }
       div.container .container-right__header-center .container-right-header-center_checkout img {
-        margin-right: 1.9rem;
-        margin-bottom: 1rem; }
+        margin-right: 1.9rem; }
+      div.container .container-right__header-center .container-right-header-center_checkout .header-center-checkout__wrap {
+        display: flex;
+        align-items: center; }
       div.container .container-right__header-center .container-right-header-center_checkout .header-center-checkout--big {
         font-size: 2.4rem;
         font-family: Montserrat-Regular;
@@ -152,12 +154,10 @@ div.container {
         font-size: 1.4rem;
         font-family: Montserrat-Regular;
         color: #9e94ff;
-        margin-right: 2.5rem;
-        margin-bottom: 0.3rem; }
+        margin-right: 2.5rem; }
       div.container .container-right__header-center .container-right-header-center_checkout .header-center-checkout--small {
         font-size: 1.4rem;
-        font-family: Montserrat-Regular;
-        margin-bottom: 0.6rem; }
+        font-family: Montserrat-Regular; }
     div.container .container-right__header-center .container-right-header-center_setting {
       background-color: #9e94ff;
       padding: 0.8rem 1rem;
@@ -287,7 +287,8 @@ div.container {
             font-weight: bold;
             border-radius: 0.4rem;
             height: 1.8rem;
-            width: 1.8rem; }
+            width: 1.8rem;
+            cursor: pointer; }
           div.container .container-right__body .container-right-body__left .container-right-body__list .container-right-body-list__content .list-content__date--gray {
             font-size: 1.4rem;
             font-family: "Montserrat-Regular";
@@ -433,11 +434,59 @@ div.container {
           background-color: #6f64f8;
           border-radius: 0.5rem;
           font-size: 1.4rem;
+          cursor: pointer;
           color: white;
           font-family: "Montserrat-Regular"; }
+          div.container .container-right__body .container-right-body__right .container-right-body__right--full .right-content__center .right-content__bot button:hover {
+            background-color: white;
+            border: 0.2rem #6f64f8 solid;
+            color: #6f64f8;
+            cursor: pointer; }
 
 @media only screen and (max-width: 1390px) {
+  body {
+    background-color: #f9f9f9; }
   .container-right-body__list {
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+  .container-right-body__right {
+    width: 20rem !important; } }
+
+@media only screen and (max-width: 900px) {
+  .container__right .container-right__header-top {
+    padding: 15px 0 5px 0;
+    height: fit-content !important; }
+    .container__right .container-right__header-top .container-right__header-top--icon {
+      flex-direction: column; }
+  .container__right .container-right__body {
+    flex-direction: column;
+    margin-right: 4.6rem;
+    padding-bottom: 4rem; }
+    .container__right .container-right__body .container-right-body__right {
+      width: 100% !important; } }
+
+@media only screen and (max-width: 376px) {
+  .container__left {
+    display: none; }
+  .container__right .container-right__header-top {
+    margin: 1rem !important; }
+  .container__right .container-right__header-center {
+    margin-bottom: 4rem; }
+    .container__right .container-right__header-center .container-right-header-center_checkout {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; }
+      .container__right .container-right__header-center .container-right-header-center_checkout .header-center-checkout--big {
+        width: 100% !important;
+        margin-bottom: 1.5rem !important; }
+      .container__right .container-right__header-center .container-right-header-center_checkout .header-center__hr {
+        display: none; }
+      .container__right .container-right__header-center .container-right-header-center_checkout .header-center-eCommerce {
+        margin-right: 1.5rem !important; }
+  .container__right .container-right__body .container-right-body__list {
+    position: relative; }
+    .container__right .container-right__body .container-right-body__list .btn-body-buy__small {
+      position: absolute;
+      top: -0.6rem;
+      right: 1rem; } }
