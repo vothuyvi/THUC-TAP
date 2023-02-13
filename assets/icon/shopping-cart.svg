@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <g id="shopping-cart" transform="translate(0.5 0.5)">
+    <circle id="Oval" cx="1" cy="1" r="1" transform="translate(5 12)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <circle id="Oval-2" data-name="Oval" cx="1" cy="1" r="1" transform="translate(11 12)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path" d="M0,0H2.545L4.251,8.926A1.288,1.288,0,0,0,5.524,10h6.185a1.288,1.288,0,0,0,1.273-1.073L14,3.333H3.182" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>
