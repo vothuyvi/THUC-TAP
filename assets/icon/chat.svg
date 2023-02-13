@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="message-square" transform="translate(1 1)">
+    <path id="Path" d="M18,12a2,2,0,0,1-2,2H4L0,18V2A2,2,0,0,1,2,0H16a2,2,0,0,1,2,2Z" fill="none" stroke="#606060" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>
