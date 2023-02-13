@@ -6,6 +6,9 @@ html {
   margin: 0;
   box-sizing: border-box;
 }
+.container-right__checkbox {
+  // display: none !important;
+}
 div {
   &.container {
     width: 100%;
@@ -116,6 +119,9 @@ div {
       flex: 2;
       background-color: #f9f9f9;
       justify-content: end;
+      .container-right__icon-hamburger {
+        display: none;
+      }
 
       .container-right__header-top {
         height: 6.2rem;
@@ -188,7 +194,6 @@ div {
         align-items: center;
         img {
           margin-right: 1.9rem;
-         
         }
         .header-center-checkout__wrap {
           display: flex;
@@ -212,12 +217,10 @@ div {
           font-family: Montserrat-Regular;
           color: #9e94ff;
           margin-right: 2.5rem;
-          
         }
         .header-center-checkout--small {
           font-size: 1.4rem;
           font-family: Montserrat-Regular;
-         
         }
       }
       .container-right-header-center_setting {
@@ -615,10 +618,24 @@ div {
   }
 }
 @media only screen and (max-width: 376px) {
+  input {
+    &:checked {
+      .container__left {
+        display: block !important;
+      }
+    }
+  }
+
   .container__left {
     display: none;
   }
   .container__right {
+    .container-right__icon-hamburger {
+      font-size: 2.5rem;
+      margin-left: 2rem;
+      margin-top: 2rem;
+      display: block !important;
+    }
     .container-right__header-top {
       margin: 1rem !important;
     }
@@ -639,8 +656,6 @@ div {
           margin-right: 1.5rem !important;
         }
       }
-
-
     }
     .container-right__body {
       .container-right-body__list {
@@ -649,10 +664,8 @@ div {
           position: absolute;
           top: -0.6rem;
           right: 1rem;
-        
         }
       }
-     
     }
   }
 }
