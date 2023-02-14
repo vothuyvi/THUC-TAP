@@ -10,7 +10,6 @@ html {
 div {
   &.container {
     width: 100%;
-    height: 114rem;
     display: flex;
     background-color: #f9f9f9;
     .container-right__checkbox {
@@ -19,10 +18,12 @@ div {
 
     .container__left {
       width: 26.8rem;
-      height: 114rem;
       background-color: white;
       box-shadow: 0px 2px 8px rgba($color: #000000, $alpha: 0.13); //
-
+      margin-bottom: 3rem;
+      .fa-xmark {
+        display: none;
+      }
       .container__left--top {
         display: flex;
         width: 23.6rem;
@@ -133,7 +134,8 @@ div {
         margin-right: 3.6rem;
         background-color: white;
         box-shadow: 0px 2px 8px rgba($color: #000000, $alpha: 0.13); //
-
+        position: relative;
+        z-index: 150;
         .container-right__header-top--icon {
           display: flex;
           justify-content: space-between;
@@ -162,12 +164,16 @@ div {
             }
             .header-top-icon-right__img {
               position: relative;
+              label {
+                &:hover {
+                  cursor: pointer;
+                }
+              }
               input {
                 display: none;
                 &:checked {
                   + .header-top-icon-right__bell {
                     display: block !important;
-                  
                   }
                 }
               }
@@ -186,7 +192,7 @@ div {
                 margin-top: 1rem;
                 display: none;
                 cursor: pointer;
-               
+
                 .header-top-right__triangle {
                   width: 1.5rem;
                   height: 1.5rem;
@@ -220,7 +226,7 @@ div {
                 .right-bell-center__item {
                   padding: 1rem;
                   &:hover {
-                    background-color: #F5F5F5;
+                    background-color: #f5f5f5;
                   }
 
                   .right-bell-center-item__top {
@@ -230,15 +236,14 @@ div {
                     margin-bottom: 0.5rem;
                     .massege__blue {
                       color: #6f64f8;
-                      
                     }
-                   span {
-                    font-size: 1.2rem;
-                    color: #999999;
-                   }
-                   i {
-                    margin-right: 0.5rem;
-                  }
+                    span {
+                      font-size: 1.2rem;
+                      color: #999999;
+                    }
+                    i {
+                      margin-right: 0.5rem;
+                    }
                     .message__green {
                       color: #2dcd7a;
                     }
@@ -248,8 +253,6 @@ div {
                     .message_yello {
                       color: orange;
                     }
-                   
-                  
                   }
                   .message__notifi {
                     font-size: 1.2rem;
@@ -283,6 +286,11 @@ div {
           }
           .header-top-right__img-user {
             position: relative;
+            label {
+              &:hover {
+                cursor: pointer;
+              }
+            }
             input {
               display: none;
               &:checked {
@@ -322,7 +330,7 @@ div {
                   align-items: center;
                   padding: 1rem 1rem;
                   &:hover {
-                    color: #1976D2;
+                    color: #1976d2;
                   }
 
                   span {
@@ -442,7 +450,6 @@ div {
         font-size: 2.8rem;
         margin: 0 auto;
 
-        // margin-right: 25rem;
       }
       .header-bot__three {
         width: 5.8rem;
@@ -765,6 +772,9 @@ div {
   }
 }
 @media only screen and (max-width: 900px) {
+  .container__left {
+    margin-bottom: 4rem !important;
+  }
   .container__right {
     .container-right__header-top {
       padding: 15px 0 5px 0;
@@ -782,6 +792,9 @@ div {
         width: 100% !important;
       }
     }
+    .btn__place {
+      justify-content: center !important;
+    }
   }
 }
 @media only screen and (max-width: 560px) {
@@ -789,19 +802,28 @@ div {
     &:checked {
       + .container__left {
         display: block !important;
-        top: 50px;
-        z-index: 15;
+        z-index: 200;
         position: fixed;
-        height: calc(100% - 50px); //chieeu dai cua trinh duyet - top
+        height: 100vh; 
         overflow: auto;
       }
     }
   }
-
+  
   .container__left {
     display: none;
     width: 100vw !important;
     position: absolute;
+
+    .fa-xmark {
+      margin-left: 41rem;
+      margin-top: 1rem;
+      font-size: 3rem;
+      color: black;
+      display: block !important;
+    
+    }
+
     .container__left--top {
       .btn {
         width: 92vw !important;
@@ -816,13 +838,13 @@ div {
     .container-right__icon-hamburger {
       font-size: 2.5rem;
       margin-left: 2rem;
-      margin-top: 2rem;
+      margin-top: 1.5rem;
       display: block !important;
+   
     }
     .container-right__header-top {
       margin: 1rem !important;
-      position: relative;
-      z-index: 99999;
+
       .header-top-right__img-user {
         position: relative;
         .header-top-right__info-user {
@@ -831,7 +853,6 @@ div {
         }
       }
       .header-top-icon-right__img {
-
         .header-top-icon-right__bell {
           right: 50%;
           transform: translateX(50%);
