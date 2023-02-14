@@ -449,7 +449,6 @@ div {
         color: #999999;
         font-size: 2.8rem;
         margin: 0 auto;
-
       }
       .header-bot__three {
         width: 5.8rem;
@@ -804,24 +803,22 @@ div {
         display: block !important;
         z-index: 200;
         position: fixed;
-        height: 100vh; 
+        height: 100vh;
         overflow: auto;
       }
     }
   }
-  
+
   .container__left {
     display: none;
     width: 100vw !important;
     position: absolute;
-
     .fa-xmark {
-      margin-left: 41rem;
+      margin-left: 2rem;
       margin-top: 1rem;
       font-size: 3rem;
-      color: black;
+      color: #000000;
       display: block !important;
-    
     }
 
     .container__left--top {
@@ -840,7 +837,6 @@ div {
       margin-left: 2rem;
       margin-top: 1.5rem;
       display: block !important;
-   
     }
     .container-right__header-top {
       margin: 1rem !important;

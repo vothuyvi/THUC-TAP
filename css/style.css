@@ -615,10 +615,10 @@ div .container-right__body {
     width: 100vw !important;
     position: absolute; }
     .container__left .fa-xmark {
-      margin-left: 41rem;
+      margin-left: 2rem;
       margin-top: 1rem;
       font-size: 3rem;
-      color: black;
+      color: #000000;
       display: block !important; }
     .container__left .container__left--top .btn {
       width: 92vw !important;
